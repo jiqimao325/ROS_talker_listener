@@ -3,8 +3,8 @@ import rospy
 from std_msgs.msg import String
 
 def callback(data):
-    rospy.loginfo(rospy.get_caller_id() + "The message is %s", data.data)
-    
+    rospy.loginfo(rospy.get_caller_id() + "Message is %s", data.data)
+
 def receive():
 
     # In ROS, nodes are uniquely named. If two nodes with the same
